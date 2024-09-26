@@ -1,0 +1,81 @@
+/* LOGO */
+@media (max-width: 768px) {
+  nav a[href="acceuil.html"] {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-link {
+    margin-left: 10px; /* Moins d'espace sur mobile */
+    display: block; /* Afficher les liens dans le menu responsive */
+    text-align: left; /* Alignement à gauche dans le menu */
+  }
+}
+
+/* Background*/
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url('../Background/108759.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: fixed;
+  height: 100vh;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-size: x-large;
+  font-style: normal;
+  color: bisque;
+}
+
+/* Styles pour la navbar avec blur */
+.blur-navbar {
+  position: fixed; /* Fixe la navbar en haut de l'écran */
+  top: 0;
+  left: 0;
+  width: 100%; /* Prend toute la largeur */
+  background-color: rgba(0, 0, 0, 0.651);
+  opacity: 1;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.199);
+  box-shadow: 0px 0.5px 5px 0px rgba(255, 255, 255, 0.377);
+  z-index: 1000; /* S'assurer que la navbar reste au-dessus du reste du contenu */
+}
+
+.navbar-nav .nav-link {
+  color: bisque;
+  margin-left: 15px;
+  margin-right: 15px;
+  /* Couleur du texte */
+}
+
+.nav-link:hover {
+  color: #9e5c25;
+  transform: scale(1.1);
+  transition: all ease 500ms;
+}
+
+.bg-bisque {
+  background-color: bisque;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.507);
+  box-shadow: 0px -12px 5px -12px rgba(255, 255, 255, 0.377);
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  left: 0;
+  width: 100%;
+
+  .nav-link {
+    color: #9e5c25;
+  }
+}

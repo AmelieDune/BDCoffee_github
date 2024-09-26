@@ -1,0 +1,85 @@
+
+
+.doc {
+    background-image: url(../Background/Background.jpg);
+    border: 3px solid #8f4a00;
+    border-radius: 10px;
+    padding: 55px;
+    width: 100%; /* Full width on small screens */
+    max-width: 600px; /* Fixed width on larger screens */
+    margin-top: 100px;
+    margin-right: 50%;
+}
+
+legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+legend img {
+    max-width: 250px;
+    margin-right: 20px;
+}
+
+h1 {
+    color: bisque;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+h1:hover {
+    color: #9e5c25;
+    transform: scale(1.1);
+    transition: all ease 500ms;
+}
+
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; /* Stacks inputs vertically */
+    align-items: center;
+    width: 100%;
+    
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%; /* Full width */
+    max-width: 300px; /* Restricts max width */
+    border: 2px solid #8f4a00;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+input[type="text"]:hover {
+    transform: scale(1.2); /* Slight hover effect */
+    transition: all ease 300ms;
+}
+
+input[type="text"]:focus {
+    border-color: #888;
+    outline: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #312009d5;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #af844c;
+    transform: scale(1.1);
+    transition: all ease 500ms;
+}

@@ -1,0 +1,37 @@
+.caroussel {
+  background-image: url(../Background/wallpaperjam.com-28595.png);
+  border: 3px solid #8f4a00;
+  border-radius: 10px;
+  padding: 100px;
+  width: 1000px;
+  margin-top: 1000px;
+  margin: auto;
+  margin-bottom: 70px;
+}
+
+legend {
+  display: flex;
+  justify-content: center; /* Centre le contenu du legend */
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+legend:hover {
+  color: #9e5c25;
+  transform: scale(1.1);
+  transition: all ease 500ms;
+}
+
+.carousel-item {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+.carousel-item:not(.active) {
+  opacity: 0;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Accueil</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blur blur-navbar position-fixed w-100">
+      <div class="container-fluid">
+        <!-- Bouton hamburger en mode responsive -->
+        <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="../images/icon_onglet_1.png" alt="Menu" style="width: 30px; height: 30px;">
+        </button>
+        <!-- Logo -->
+        <a href="../index.html">
+          <img src="../images/icon_onglet_2.png" alt="Logo" style="width:130px; height:auto;">
+        </a>
+        <!-- Lien Nos bandes dessinées visible après le logo -->
+        <a class="ms-4 nav-link d-none d-lg-inline" href="../html/recherche_BD.html">Nos bandes dessinées</a>
+        <!-- Menu Collapsé -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <!-- Lien Nos bandes dessinées en mode responsive -->
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="../index.html">Accueil</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="../html/recherche_BD.html">Nos bandes dessinées</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/mon_compte.html">Mon compte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/panier.html">Panier</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+ 
+<section>
+  <h1>Créer un compte</h1>
+  <form action="get">
+      <label for="civilité">Civilité</label>
+      <div id="id_civil">
+          <input type="radio" name="civilite" value="Monsieur" id="idM" />
+          <label for="Monsieur"> M. </label>
+          <input type="radio" name="civilite" value="Madame" id="idMme" />
+          <label for="Madame"> Mme </label>
+      </div>
+      <label for="nom"></label>
+      <input type="text" name="nom" id="idNom" placeholder="Nom" required="required"/>
+      <br>
+      <label for="prenom"></label>
+      <input type="text" name="prenom" id="idPrenom" placeholder="Prénom" required="required"/>
+      <br>
+      <label for="anniversaire"></label>
+      <input type="date" name="anniversaire" id="idAnniv" placeholder="JJ/MM/AAAA" required="required"/>
+      <br>
+      <label for="mail"></label>
+      <input type="mail" name="mail" id="idMail" placeholder="Email" required="required"/>
+      <br>
+      <label for="mdp"></label>
+      <input type="password" name="mdp1" id="idMdp1" placeholder="Mot de passe" required="required"/>
+      <input type="password" name="mdp2" id="idMdp2" placeholder="Confirmez le mot de passe" required="required"/>
+      <br>
+      <div id="newsletter">
+          <input type="checkbox">
+          <label for="newsletter">Je souhaite être informé(e) par mail des offres du site et de ses partenaires </label>
+      </div>
+      <div id="id_crea"></div>
+      <br>
+      <button type="submit" id="btnEnr">Enregistrer</button>
+  </form>
+
+  <h1>Connexion</h1>
+  <form action="get">
+      <label for="mail"></label>
+      <input type="mail" name="mail" id="idMailCo" placeholder="Email" required="required"/>
+      <label for="mdp"></label>
+      <input type="password" name="mdp" id="idMdpCo" placeholder="Mot de passe" required="required" />
+      <br>
+      <div id="id_connec"></div>
+      <button type="submit" id="btnIdent">Identifiez-vous</button>
+  </form>
+
+<!-- mot de passe oublié en type ahref version bouton -->
+  <button type="button" id="btnMdp">Mot de passe oublié ?</button>
+
+  <script src="/js/login.js"></script>
+</section>
+
+<footer class="text-center mt-auto">
+  <div style="width: 100%;">
+    <ul class="nav justify-content-center mb-3">
+      <li class="nav-item">
+        <a class="nav-link " href="../html/service_client.html">Service client</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="../html/contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="../html/a_propos.html">A propos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="../html/cgv.html">Conditons générales de vente</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
+  <script src="../js/login.js"></script>
+</body>
+
+</html>
